@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My Form</title>
+</head>
+<body>
+<h1>Please fill the following form:</h1>
+<form action="register">
+ID: <input type="text" name="id" placholder="your id" required pattern="([A-Z])+([0-9]){1,6}" value=""/><br>
+Name: <input type="text" name="name" placeholder="your name"required 
+pattern="([A-Z][A-Za-z]+)([][A-Z][A-Za-z]+)*" value=""/><br>
+Age: <input type="number" size="3" min="18" max="60" value="21" required placeholder="18 to 60"/>
+Gender: <input type="radio" name="gender" value="Male" checked="true"/>Male
+         <input type="radio" name="gender" value="Female"/>Female
+<br>
+Mobile: <input type="number" size="10" required pattern="[7-9][0-9]{10}"/><br>
+<select name="Location" onChange="alert(this.value)">
+<option value="mumbai">Mumbai</option>
+<option value="pune">Pune</option>
+<option value="hyderabad">Hyderabad</option>
+<option value="bangalore">Bangalore</option>
+<option value="noida">Noida</option>
+<br><input type="submit" value="SUBMIT"/>
+</form>
+
+
+</html>
